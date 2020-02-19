@@ -10,8 +10,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Yelp!</a>
+  <form class="form-inline">
+    <a class="btn btn-outline-primary" href="/restaurants" role="button">All restaurants</a>
+    <div style="padding-left: 10px;">
+    <a class="btn btn-outline-primary" href="/restaurants/new" role="button">Create restaurant</a>
+    </div>
+  </form>
+</nav>
     <%= yield %>
   </body>
 </html>
